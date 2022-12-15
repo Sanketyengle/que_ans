@@ -1,0 +1,7 @@
+count = 0
+
+while count < 7:
+    print('Inside Statement')
+    count = count + 1
+else:
+    print('Outside Statement')
