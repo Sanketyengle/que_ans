@@ -1,0 +1,10 @@
+def gen_char(givenum,givechar):
+    outputstring = " "
+    for i in range(givenum):
+        outputstring = outputstring + givechar
+    return outputstring
+print("Enter the Char")
+givechar = input()
+print("Enter the number of times \'"+str(givechar)+ "\' to be printed")
+givenum = int(input())
+print("The string is: "+str(gen_char(givenum,givechar)))
