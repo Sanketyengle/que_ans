@@ -1,0 +1,9 @@
+def switch(student):
+    if student == "Science":
+        return "You can become a scientist."
+    elif student == "Commerce":
+        return "You can become a Charted Accountent"
+    elif student == "Arts":
+        return "You can become a Teacher"
+
+print(switch("Arts"))
