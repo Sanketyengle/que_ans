@@ -1,0 +1,50 @@
+<!--HTML CODE-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Using the document.getElementById() method</title>
+    <script src="script.js"> </script>
+</head>
+
+<body>
+   
+    <p id="mytext1" onclick="changeText();"> Click Me! </p>
+    <p id="mytext2" onclick="changeText();"> Click Me! </p>
+    <p id="mytext3" onclick="changeText();"> Click Me! </p>
+
+    <input id="mytextbox" type="text">
+
+</body>
+</html>
+
+
+<!--Java Script Code-->
+
+
+function changeText()
+{
+    var mytext1 = document.getElementById('mytext1');
+    console.log(mytext1.innerHTML);
+    mytext1.innerHTML = "You Clicked Here!";
+    mytext1.style.color = "green";
+
+
+    var mytext2 = document.getElementById('mytext2');
+    console.log(mytext2.innerHTML);
+    mytext2.innerHTML = "You Clicked Here!";
+    mytext2.style.color = "Red";
+
+    var mytext3 = document.getElementById('mytext3');
+    console.log(mytext3.innerHTML);
+    mytext3.innerHTML = "You Clicked Here!";
+    mytext3.style.color = "yellow";
+
+    var mytextbox = document.getElementById('mytextbox');
+    console.log(mytextbox.value);
+
+   
+}
